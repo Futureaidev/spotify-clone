@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background: #121212;
+    color: #fff;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #000;
+  }
+  
+  .navbar h1 {
+    font-size: 24px;
+    color: #1DB954;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 100px 20px 60px;
+    background: linear-gradient(to bottom, #1db954, #121212);
+  }
+  
+  .hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+  }
+  
+  .btn {
+    background: #1DB954;
+    border: none;
+    padding: 12px 24px;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #1aa34a;
+  }
+  
+  .section {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #181818;
+  }
+  
+  .section h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .section p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .mini-player {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #000;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #1db954;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .player-info {
+    font-size: 14px;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .progress-bar {
+    width: 150px;
+    height: 6px;
+    background: #333;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    width: 0%;
+    height: 100%;
+    background: #1db954;
+    transition: width 0.3s;
+  }
+  
+  /* Animations */
+  .section, .hero {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {opacity: 0; transform: translateY(20px);}
+    100% {opacity: 1; transform: translateY(0);}
+  }
+  
